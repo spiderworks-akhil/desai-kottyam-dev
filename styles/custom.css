@@ -55,6 +55,7 @@ p {
     border-radius: 25px;
     height: 100%;
     object-fit: cover;
+    width: 100%;
 }
 
 .slide-btm-text {
@@ -62,7 +63,7 @@ p {
     background: #fff;
     border-radius: 25px 0 0;
     min-width: 300px;
-    padding: 35px 35px 28px;
+    padding: 28px 35px 28px;
     position: absolute;
     bottom: 0;
     right: 0;
@@ -1864,17 +1865,32 @@ p.exclusive-p {
 }
 
 .discont-block h3 {
-    color: #fff;
-    font-size: 20px;
-    margin: 15px 0;
+    color: rgb(194, 192, 192);
+    font-size: 18px;
     text-align: right;
 }
-
 .discont-block h3 span{
-  font-size: 24px;
+  font-size: 20px;
   font-weight: 600;
   display: block;
+  color: #fff;
 }
+
+.discont-block{
+      backdrop-filter: blur(15.5px);
+      background:rgba(137, 11, 11, 0.32);
+      border: 1px solid #505050ad;
+      border-radius: 10px;
+      margin-top: 10px;
+      padding: 5px 20px;
+      position: relative;
+      margin-bottom: 20px;
+      width: fit-content;
+      margin: 10px auto;
+      margin-right: 0;
+}
+
+
 
 .project-list-block-item-img{
   position: relative;
@@ -1898,6 +1914,10 @@ button.download-br-btn{
       background: #ffffff52;
       border: 1px solid #505050ad;
       border-radius: 10px;
+}
+
+.slide-btm-text-item {
+    max-width: 180px;
 }
 
   @media (max-width: 1700px){
@@ -1942,7 +1962,10 @@ button.download-br-btn{
   
   
   @media (max-width: 1300px){
-  
+      .flex-row-reverse .pr-status {
+        left: auto;
+        right: -10px;
+    }
     .is-sticky {
       position: fixed;
       top: 10px;
@@ -2016,6 +2039,20 @@ button.download-br-btn{
     display: none;
   }
   
+  .discont-block h3 {
+    text-align: left;
+    margin: 15px 0;
+    font-size: 20px;
+}
+
+.discont-block {
+    border: 1px solid #fff;
+    margin: 20px 0;
+    padding: 0 20px;
+    border-radius: 13px;
+    width: fit-content;
+    margin: 20px auto 0;
+}
   
   .banner-slider-block {
     display: none;
@@ -2165,6 +2202,7 @@ button.download-br-btn{
   .sticky_modal {
     justify-content: center;
     align-items: center;
+    width: 90%;
   }
   
     .banner-slider-block {
@@ -2308,12 +2346,13 @@ input.form-input, textarea.form-input, textarea.form-input {
   .slider-home-price-detail-block-item h5 {
     font-size: 13px;
   }
-  .slider-home-price-detail-block-item h3 {
-    font-size: 24px;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
-  }
+.slider-home-price-detail-block-item h3 {
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        min-height: auto;
+    }
   
   .slider-home-price-detail-block-item {
     flex-basis: 48%;

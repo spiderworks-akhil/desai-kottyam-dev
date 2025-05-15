@@ -261,20 +261,25 @@ export default function Banner({ slider }) {
           </div> */}
 
           <div className="slide-btm-text">
-            <div className="grid sm:grid-cols-3 grid-cols-2 gap-[25px]">
+            <div className="grid sm:grid-cols-4 grid-cols-2 gap-[20px]">
               <div className="slide-btm-text-item">
                 <h2>6500 *</h2>
                 <h5>Satisfied Customers</h5>
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>6500 *</h2>
-                <h5>Satisfied Customers</h5>
+                <h2>61<sup>+</sup></h2>
+                <h5>Completed And Ongoing Projects</h5>
               </div>
 
               <div className="slide-btm-text-item">
                 <h2>32</h2>
                 <h5>Years Of Experience</h5>
+              </div>
+
+               <div className="slide-btm-text-item">
+                <h2>8.5</h2>
+                <h5>Million Sq.ft.Construction</h5>
               </div>
             </div>
           </div>
