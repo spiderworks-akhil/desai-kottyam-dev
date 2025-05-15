@@ -21,7 +21,7 @@ const Layout = ({ children }) => {
 
                 <div className="header-right-block flex items-center gap-[10px]">
                   <div className="btn-flex flex items-center justify-center gap-[15px]">
-                    <a href="tel:+918129000118">
+                    <a href="tel:+919847528000">
                       <button
                         className="cursor-pointer nearby-mobile-btn flex items-center gap-[5px] bg-white rounded-[12px] text-black px-4 py-2 "
                         id="scroll"

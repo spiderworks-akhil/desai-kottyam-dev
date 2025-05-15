@@ -665,12 +665,26 @@ input.form-input, textarea.form-input {
   
   
   .select-project-tab-block .react-tabs__tab--selected {
-    background: #1E1E1E !important;
+    background: rgb(76 170 62) !important;
     border: 1.5px solid #1E1E1E !important;
     color: #fff !important;
     border-radius: 37px !important;
   }
-  
+  .react-tabs__tab:focus:after{
+    display: none !important;
+  }
+
+.whatsapp-btn {
+    background: rgb(78, 231, 152);
+    border-radius: 6px;
+    align-items: center;
+    padding: 10px 11px;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    display: flex;
+}
   
   
   .swiper-button-next, .swiper-rtl .swiper-button-prev{
@@ -1866,7 +1880,7 @@ p.exclusive-p {
     font-weight: 500;
     line-height: normal;
     border-radius: 6px;
-    background: #1E1E1E;
+    background: rgb(76 170 62);
     padding: 10px 20px;
     margin-left: 10px;
 }
