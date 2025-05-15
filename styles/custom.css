@@ -1027,18 +1027,25 @@ input.form-input, textarea.form-input {
     transform: rotate(180deg);
     z-index: -1;
   }
-  
-  .footer-call-to-action {
-    z-index: 1000;
-    position: absolute;
-    left: 0;
-    width: 100%;
-    min-height: fit-content;
-  }
-  
+
   .spe-accordion{
     position: relative;
   }
+
+  button.cursor-pointer.footer-cta-btn {
+    color: rgb(0, 0, 0);
+    text-align: center;
+    background: #dfffda;
+    border-radius: 6px;
+    align-items: center;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-style: normal;
+    line-height: normal;
+    display: flex;
+    font-size: 18px;
+    font-weight: 500;
+}
   
   .spe-accordion::before {
     content: "";

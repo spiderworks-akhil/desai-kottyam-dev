@@ -43,7 +43,10 @@ const Layout = ({ children }) => {
                         <span>Call Now</span>
                       </button>
                     </a>
-                    <button  onClick={() => setIsEnquiryOpen(true)} className="cursor-pointer enquire-btn-mobile enquire-btn-modal bg-[#ff5a5f] text-white px-4 py-2 rounded">
+                    <button
+                      onClick={() => setIsEnquiryOpen(true)}
+                      className="cursor-pointer enquire-btn-mobile enquire-btn-modal bg-[#ff5a5f] text-white px-4 py-2 rounded"
+                    >
                       Enquire Now
                     </button>
                   </div>
@@ -72,6 +75,12 @@ const Layout = ({ children }) => {
                 Hurry, book now to avail exciting limited period offers!
               </p>
 
+              <button
+                onClick={() => setIsEnquiryOpen(true)}
+                className="cursor-pointer footer-cta-btn"
+              >
+                Enquire Now
+              </button>
               {/* <ModalPopupFooter /> */}
             </div>
 
@@ -105,10 +114,9 @@ const Layout = ({ children }) => {
       </div>
 
       {isEnquiryOpen && (
-  <EnquiryModal onClose={() => setIsEnquiryOpen(false)} />
-)}
+        <EnquiryModal onClose={() => setIsEnquiryOpen(false)} />
+      )}
     </>
-    
   );
 };
 
