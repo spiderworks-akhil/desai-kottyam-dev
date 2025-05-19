@@ -108,7 +108,7 @@ export default function Banner({ slider }) {
 
                   <div className="discont-block">
                     <h3>
-                      <span>1 Lakh Discount</span>On Spot Booking 
+                      <span>1 Lakh Discount</span>On Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -175,7 +175,7 @@ export default function Banner({ slider }) {
                   </div>
                   <div className="discont-block">
                     <h3>
-                      <span>1 Lakh Discount</span>On Spot Booking 
+                      <span>1 Lakh Discount</span>On Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -217,10 +217,10 @@ export default function Banner({ slider }) {
                         </h3>
                       </span>
 
-                      <h6>Status: Ready to Occupy</h6>
+                      <h6>Status: Work in Progress</h6>
                     </div>
                     <div class="slider-home-price-detail-block-item">
-                      <h3> DD Legacy Heights`</h3>
+                      <h3> DD Legacy Heights</h3>
                       <div class="slider-home-location-block">
                         <svg
                           width="12"
@@ -241,8 +241,8 @@ export default function Banner({ slider }) {
                     </div>
                   </div>
                   <div className="discont-block">
-                   <h3>
-                      <span>1 Lakh Discount</span>On Spot Booking 
+                    <h3>
+                      <span>1 Lakh Discount</span>On Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -268,7 +268,9 @@ export default function Banner({ slider }) {
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>61<sup>+</sup></h2>
+                <h2>
+                  61<sup>+</sup>
+                </h2>
                 <h5>Completed And Ongoing Projects</h5>
               </div>
 
@@ -277,7 +279,7 @@ export default function Banner({ slider }) {
                 <h5>Years Of Experience</h5>
               </div>
 
-               <div className="slide-btm-text-item">
+              <div className="slide-btm-text-item">
                 <h2>8.5</h2>
                 <h5>Million Sq.ft.Construction</h5>
               </div>
