@@ -36,12 +36,7 @@ export default function Home() {
             <div className="project-detail-section w-full py-[40px] pb-[100px]">
               <div className="w-full">
                 <h2 className="md:text-[32px] text-[22px] text-[#1E1E1E] md:leading-[45px] leading-[34px] max-w-[850px] m-auto text-center">
-                  Upgrade your Lifestyle in Kottayam – Own a 2/3 BHK{" "}
-                  <span className=" font-[600] text-[#4ee798]">
-                    Flats in Kottayam
-                  </span>{" "}
-                  by Desai Homes with quality construction and architectural
-                  excellence at Affordable prices.
+                 Find your peace in a home crafted with care. Our  <span className=" font-[600] text-[#4ee798]">Premium flats in Kottayam</span> offer elegant living at unmatched value with quality construction and architectural excellence.
                 </h2>
               </div>
             </div>
