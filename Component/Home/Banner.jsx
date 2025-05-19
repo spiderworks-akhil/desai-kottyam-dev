@@ -37,9 +37,9 @@ export default function Banner({ slider }) {
                 : false
             }
             autoplay={{
-              delay: 7000,
+              delay: 3500,
               disableOnInteraction: false,
-              pauseOnMouseEnter: true,
+              pauseOnMouseEnter: false,
             }}
             effect={"fade"}
             fadeEffect={{ crossFade: true }}
