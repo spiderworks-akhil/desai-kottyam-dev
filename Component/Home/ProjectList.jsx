@@ -158,7 +158,7 @@ export default function ProjectList({}) {
                     <li className="py-[3px]">
                       Children's play area with equipments
                     </li>
-                    <li className="py-[3px]">Budget friendly</li>
+                    <li className="py-[3px]">Affordable</li>
                   </ul>
 
                   <h6 className="mt-[15px] font-[600] text-[14px]">
