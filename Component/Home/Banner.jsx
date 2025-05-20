@@ -7,11 +7,11 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
-import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic-Mount-Banner.jpg";
+import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic-Mount-Banner-02.jpg";
 import BannerImgMob01 from "@/public/img/maj-mob-banner.jpg";
-import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gate-Banner.jpg";
+import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gate-Banner-02.jpg";
 import BannerImgMob02 from "@/public/img/city-gate-mob-banner.jpg";
-import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-Heights-Banner.jpg";
+import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-Heights-Banner-02.jpg";
 import BannerImgMob03 from "@/public/img/legacy-mob-banner.jpg";
 
 export default function Banner({ slider }) {
