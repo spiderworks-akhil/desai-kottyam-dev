@@ -184,7 +184,7 @@ export default function ProjectList({}) {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[34px] font-[600] text-[#1E1E1E]">
-                      59* Lakhs
+                      44* Lakhs
                     </h4>
                   </div>
                   <Image
