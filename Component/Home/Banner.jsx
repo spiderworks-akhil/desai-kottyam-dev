@@ -44,6 +44,7 @@ export default function Banner({ slider }) {
             effect={"fade"}
             fadeEffect={{ crossFade: true }}
             speed={1000}
+             loop={true}
             spaceBetween={20}
             slidesPerView={1}
             className="mySwiper"
