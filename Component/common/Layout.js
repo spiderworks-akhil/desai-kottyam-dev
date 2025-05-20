@@ -63,12 +63,12 @@ const Layout = ({ children }) => {
           <div className="call-to-action-block flex justify-between items-center">
             <div className="call-to-action-text-block w-[50%] lg:w-[50%]">
               <div className="text-[#F8F8F8] text-[20px] font-[500] flex gap-2 items-center">
-                Your new home awaits
+                Find your perfect Flat in Kottayam
                 <span className="bg-[#F8F8F8] w-[70px] h-[2px] flex"></span>
               </div>
 
               <h2 className="text-[40px] font-[700] text-[#fff] leading-[48px]">
-                Take the leap & book your dream home in Kottayam!
+                Turn the key into your heart with Comfort, Joy, and Love
               </h2>
 
               <p className="text-[#DFDFDF] text-[20px] leading-[30px] font-[400] m-[20px_0]">

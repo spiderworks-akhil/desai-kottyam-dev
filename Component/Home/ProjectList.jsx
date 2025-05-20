@@ -54,12 +54,11 @@ export default function ProjectList({}) {
 
                   <ul className="">
                     <li className="py-[3px]">Swimming pool with kid’s pool</li>
-                    <li className="py-[3px]">Health club & indoor games</li>
+                    <li className="py-[3px]">Health club & Indoor Games and Pool Table</li>
                     <li className="py-[3px]">A/c home theatre cum hall</li>
-                    <li className="py-[3px]">
-                      Children's play area with equipments
-                    </li>
+                    <li className="py-[3px]">Children's play area with equipments</li>
                     <li className="py-[3px]">Landscaped garden</li>
+                    <li className="py-[3px]">Badminton Court</li>
                   </ul>
 
                   <h6 className="mt-[15px] font-[600] text-[14px]">
@@ -155,7 +154,7 @@ export default function ProjectList({}) {
                   <ul className="">
                     <li className="py-[3px]">Prime location</li>
                     <li className="py-[3px]">Health club</li>
-                    <li className="py-[3px]">Indoor games</li>
+                    <li className="py-[3px]">Indoor games &  Pool Table</li>
                     <li className="py-[3px]">
                       Children's play area with equipments
                     </li>
@@ -257,7 +256,8 @@ export default function ProjectList({}) {
                       Children's play area with equipment
                     </li>
                     <li className="py-[3px]">Health club</li>
-                    <li className="py-[3px]">Indoor games</li>
+                    <li className="py-[3px]">Indoor games &  Pool Table</li>
+                    <li className="py-[3px]">Multi purpose hall</li>
                   </ul>
 
                   <h6 className="mt-[15px] font-[600] text-[14px]">

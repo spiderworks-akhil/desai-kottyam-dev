@@ -217,7 +217,7 @@ export default function Banner({ slider }) {
                         </h3>
                       </span>
 
-                      <h6>Status: Work in Progress</h6>
+                      <h6>Status: Nearing Completion</h6>
                     </div>
                     <div class="slider-home-price-detail-block-item">
                       <h3> DD Legacy Heights</h3>
@@ -263,7 +263,7 @@ export default function Banner({ slider }) {
           <div className="slide-btm-text">
             <div className="grid sm:grid-cols-4 grid-cols-2 gap-[20px]">
               <div className="slide-btm-text-item">
-                <h2>6500 <sup>+</sup></h2>
+                <h2>6500<sup>+</sup></h2>
                 <h5>Satisfied Customers</h5>
               </div>
 
@@ -275,12 +275,12 @@ export default function Banner({ slider }) {
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>32</h2>
+                <h2>33</h2>
                 <h5>Years Of Experience</h5>
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>8.5</h2>
+                <h2>8.5<sup>+</sup></h2>
                 <h5>Million Sq.ft.Construction</h5>
               </div>
             </div>
