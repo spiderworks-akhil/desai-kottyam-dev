@@ -29,17 +29,28 @@ export default function Home() {
       <Banner />
       <TextWrapper />
       <ProjectList />
+      
+
+      <section id="project-dt-section" className="mb-[80px]">
 
       <div className="container">
         <div className="flex items-center justify-center">
           <div className="project-detail-section md:w-10/12 w-full">
-            <div className="project-detail-section w-full py-[40px] pb-[100px]">
+            <div className="project-detail-section w-full py-[60px] pb-[60px] ">
               <div className="w-full">
                 <h2 className="md:text-[32px] text-[22px] text-[#1E1E1E] md:leading-[45px] leading-[34px] max-w-[850px] m-auto text-center">
                  Find your peace in a home crafted with care. Our  <span className=" font-[600] text-[#4ee798]">Premium flats in Kottayam</span> offer elegant living at unmatched value with quality construction and architectural excellence.
                 </h2>
               </div>
             </div>
+          </div>
+        </div>
+      </div>
+      </section>
+
+      <div className="container">
+        <div className="flex items-center justify-center">
+          <div className="project-detail-section md:w-10/12 w-full">
             <ProjectDetail />
           </div>
         </div>

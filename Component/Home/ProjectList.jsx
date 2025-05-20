@@ -302,7 +302,7 @@ export default function ProjectList({}) {
                 </div>
               </div>
 
-              <div className="pr-status">Work In Progress</div>
+              <div className="pr-status">Nearing Completion</div>
             </div>
           </div>
         </div>

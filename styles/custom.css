@@ -303,6 +303,10 @@ img.project-logo {
     padding-left: 25px;
 }
 
+section#project-dt-section{
+      background: linear-gradient(#0000 32.81%, #00000008), rgb(235, 254, 239);
+}
+
 @media screen and (max-width: 768px) {
     .container {
         width: 100%;
