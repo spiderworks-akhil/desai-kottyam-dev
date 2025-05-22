@@ -2465,18 +2465,19 @@ input.form-input, textarea.form-input, textarea.form-input {
         position: relative;
         min-width: 100%;
     }
-    .banner-left-text {
+  .banner-left-text {
         background: none;
-        padding: 10px 10px;
-        position: absolute;
-        top: 70px;
         width: 100%;
         height: 100%;
+        padding: 10px;
+        position: absolute;
+        top: 0;
+        padding-top: 85px;
     }
 
   .slider-home-price-detail-block {
         position: absolute;
-        bottom: 80px;
+        bottom: 10px;
         left: 50%;
         transform: translate(-50%);
         width: 90%;
@@ -2561,16 +2562,16 @@ input.form-input, textarea.form-input, textarea.form-input {
     font-size: 16px !important;
     font-weight: 600;
   }
-  .discont-block h3 span {
-    color: #fff;
-    font-size: 15px;
-    font-weight: 600;
-    display: block;
-}
+.discont-block h3 span {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 600;
+        display: block;
+        margin-bottom: 2px;
+    }
 .discont-block h3 {
         text-align: left;
-        margin: 15px 0;
-        font-size: 15px;
+        font-size: 14px;
     }
   
   form.banner-top-form-v2 {
@@ -2723,7 +2724,7 @@ input.form-input, textarea.form-input, textarea.form-input {
         font-style: normal;
         font-weight: 600;
         line-height: 36px;
-        text-shadow:0 2px 2px rgba(0, 0, 0, 0.112), 0 2px 2pxrgba(0, 0, 0, 0.07), 0 2px 2pxrgba(0, 0, 0, 0.04);
+       text-shadow: 0 2px 2px #0006, 0 2px 2px #0000001a, 0 2px 2px #0000001a;
     }
 
     
@@ -2736,17 +2737,19 @@ input.form-input, textarea.form-input, textarea.form-input {
         display: block;
     }
 
-    .discont-block {
+.discont-block {
         border: 1px solid #fff;
         border-radius: 13px;
-        width: fit-content;
-        padding: 0 10px;
-        margin: 10px auto;
-        margin-right: 0px;
+        width: 95px;
+        margin: 10px 0 10px auto;
+        padding: 0 7px;
     }
-        .discont-block h3{
-          margin: 3px 0;
-        }
+.discont-block h3 {
+        margin: 5px 0;
+        font-size: 10px;
+        line-height: 16px;
+        color: #6e4e1f;
+    }
   
   .banner-form-block.flex.justify-center.items-center {
     margin-top: 20px;
