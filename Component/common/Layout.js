@@ -2,6 +2,7 @@ import { useEffect, useRef, useState } from "react";
 import { useRouter } from "next/router";
 import Logo from "@/public/img/desai-logo.png";
 import WhyusImg from "@/public/img/why-us-img.png";
+import FooterLogo from "@/public/img/desai-footer-logo.png";
 import Image from "next/image";
 import { BtnIcon, CallIcon } from "./Button";
 import EnquiryModal from "@/Component/common/EnquiryModal"; // Adjust path if needed
@@ -62,13 +63,17 @@ const Layout = ({ children }) => {
         <div className="justify-between px-4 mx-auto lg:max-w-[1350px] md:items-center  md:px-8">
           <div className="call-to-action-block flex justify-between items-center">
             <div className="call-to-action-text-block w-[50%] lg:w-[50%]">
+
+              <div className="footer-logo mb-[25px]">
+                <Image src={FooterLogo} alt="FooterLogo" width={250} height={60} />
+              </div>
               <div className="text-[#F8F8F8] text-[20px] font-[500] flex gap-2 items-center">
                 Find your perfect Flat in Kottayam
                 <span className="bg-[#F8F8F8] w-[70px] h-[2px] flex"></span>
               </div>
 
-              <h2 className="text-[40px] font-[700] text-[#fff] leading-[48px]">
-                Turn the key into your heart with Comfort, Joy, and Love
+              <h2 className="text-[34px] font-[700] mt-[25px] text-[#fff] leading-[48px]">
+              The Home you’ve waited for is waiting for you - Book your flat today
               </h2>
 
               <p className="text-[#DFDFDF] text-[20px] leading-[30px] font-[400] m-[20px_0]">
@@ -90,7 +95,7 @@ const Layout = ({ children }) => {
           </div>
         </div>
 
-        <footer className="bg-[#1E1E1E] p-[20px_0]">
+        <footer className="bg-[#1E1E1E] p-[40px_0px_20px]">
           <div className="justify-between px-4 mx-auto lg:max-w-[1350px] md:items-center  md:px-8">
             <div className="footer-content flex items-center justify-between">
               <div className="footer-copy-write text-[#fff] text-[13px] font-[300]">

@@ -13,7 +13,7 @@ export default function ProjectList({}) {
       <div className="container">
         <div className="flex justify-center  mt-[40px]">
           <div className="lg:w-10/12 w-full">
-            <div className="relative project-list-block md:flex-row flex-col-reverse flex justify-between items-center flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
+            <div className="relative project-list-block md:flex-row flex-col-reverse flex justify-between items-stretch flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
               <div className="md:w-6/12 w-full">
                 <div className="project-list-block-item md:pr-[30px] md:pl-[20px] relative">
                   <div className="hidden items-start justify-between gap-[5px] mb-[10px] md:flex lg:flex-row flex-col">
@@ -53,11 +53,11 @@ export default function ProjectList({}) {
                   <div className="border-[#aaaaaa] border-t mt-[15px] pt-[15px]"></div>
 
                   <ul className="">
-                    <li className="py-[3px]">Swimming pool with kid’s pool</li>
-                    <li className="py-[3px]">Health club & Indoor Games and Pool Table</li>
-                    <li className="py-[3px]">A/c home theatre cum hall</li>
-                    <li className="py-[3px]">Children's play area with equipments</li>
-                    <li className="py-[3px]">Landscaped garden</li>
+                    <li className="py-[3px]">Swimming Pool with Kid’s Pool</li>
+                    <li className="py-[3px]">Health Club, Indoor Games & Pool Table</li>
+                    <li className="py-[3px]">A/c Home Theatre cum Hall</li>
+                    <li className="py-[3px]">Children's Play Area with Equipments</li>
+                    <li className="py-[3px]">Landscaped Garden</li>
                     <li className="py-[3px]">Badminton Court</li>
                   </ul>
 
@@ -111,7 +111,7 @@ export default function ProjectList({}) {
 
         <div className="flex justify-center mt-[120px] flex-row-reverse">
           <div className="lg:w-10/12 w-full">
-            <div className="relative project-list-block flex justify-between items-center md:flex-row-reverse flex-col-reverse flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
+            <div className="relative project-list-block flex justify-between items-stretch md:flex-row-reverse flex-col-reverse flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
               <div className="md:w-6/12 w-full">
                 <div className="project-list-block-item md:pr-[30px] md:pl-[20px] relative">
                   
@@ -152,13 +152,13 @@ export default function ProjectList({}) {
                   <div className="border-[#aaaaaa] border-t mt-[15px] pt-[15px]"></div>
 
                   <ul className="">
-                    <li className="py-[3px]">Prime location</li>
-                    <li className="py-[3px]">Health club</li>
-                    <li className="py-[3px]">Indoor games &  Pool Table</li>
+                    <li className="py-[3px]">Prime Location</li>
+                    <li className="py-[3px]">Health Club</li>
+                    <li className="py-[3px]">Indoor Games &  Pool Table</li>
                     <li className="py-[3px]">
-                      Children's play area with equipments
+                      Children's Play Area with Equipments
                     </li>
-                    <li className="py-[3px]">Affordable</li>
+                    <li className="py-[3px]">Boutique Apartment</li>
                   </ul>
 
                   <h6 className="mt-[15px] font-[600] text-[14px]">
@@ -210,7 +210,7 @@ export default function ProjectList({}) {
 
         <div className="flex justify-center mt-[120px]">
           <div className="lg:w-10/12 w-full">
-            <div className="relative project-list-block flex justify-between items-center md:flex-row flex-col-reverse flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
+            <div className="relative project-list-block flex justify-between items-stretch md:flex-row flex-col-reverse flex-wrap bg-[#f2f4f4] p-[20px] rounded-[10px]">
               <div className="md:w-6/12 w-full">
                 <div className="project-list-block-item md:pr-[30px] md:pl-[20px] relative">
                 
@@ -251,13 +251,13 @@ export default function ProjectList({}) {
                   <div className="border-[#aaaaaa] border-t mt-[15px] pt-[15px]"></div>
 
                   <ul className="">
-                    <li className="py-[3px]">Swimming pool with kid’s pool</li>
+                    <li className="py-[3px]">Swimming Pool with Kid’s Pool</li>
                     <li className="py-[3px]">
-                      Children's play area with equipment
+                      Children's Play Area with Equipment
                     </li>
-                    <li className="py-[3px]">Health club</li>
-                    <li className="py-[3px]">Indoor games &  Pool Table</li>
-                    <li className="py-[3px]">Multi purpose hall</li>
+                    <li className="py-[3px]">Health Club</li>
+                    <li className="py-[3px]">Indoor Games & Pool Table</li>
+                    <li className="py-[3px]">Multi Purpose Hall</li>
                   </ul>
 
                   <h6 className="mt-[15px] font-[600] text-[14px]">

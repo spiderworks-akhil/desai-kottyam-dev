@@ -35,20 +35,20 @@ export default () => (
     </TabList>
 
     <TabPanel id="majestic-mount">
-      <div className="project-Specifications-block">
-        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
-          Specifications
-        </h2>
-
-        <SpecificationsMajesticMount />
-      </div>
-
       <div className="project-floorplan-block m-[30px_0px_0px_0px]">
         <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
           Floor Type
         </h2>
 
         <FloorPlanSliderMajesticMount />
+      </div>
+
+      <div className="project-Specifications-block">
+        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
+          Specifications
+        </h2>
+
+        <SpecificationsMajesticMount />
       </div>
 
       <div className="project-home-loans-block">
@@ -91,20 +91,20 @@ export default () => (
     </TabPanel>
 
     <TabPanel id="city-gate">
-      <div className="project-Specifications-block">
-        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
-          Specifications
-        </h2>
-
-        <SpecificationsCityGate />
-      </div>
-
       <div className="project-floorplan-block m-[30px_0px_0px_0px]">
         <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
           Floor Type
         </h2>
 
         <FloorPlanSliderCityGate />
+      </div>
+
+      <div className="project-Specifications-block">
+        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
+          Specifications
+        </h2>
+
+        <SpecificationsCityGate />
       </div>
 
       <div className="project-home-loans-block">
@@ -166,20 +166,20 @@ export default () => (
     </TabPanel>
 
     <TabPanel classID="KingsSqure">
-      <div className="project-Specifications-block">
-        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
-          Specifications
-        </h2>
-
-        <Specifications />
-      </div>
-
       <div className="project-floorplan-block m-[30px_0px_0px_0px]">
         <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
           Floor Type
         </h2>
 
         <FloorPlanSliderLegacy />
+      </div>
+
+      <div className="project-Specifications-block">
+        <h2 className="section-sub-title text-[#1E1E1E] text-[30px] font-[600] m-[50px_0px_20px_0px]">
+          Specifications
+        </h2>
+
+        <Specifications />
       </div>
 
       <div className="project-home-loans-block">

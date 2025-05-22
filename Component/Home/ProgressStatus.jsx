@@ -1,14 +1,14 @@
 import React from "react"
 
 import Image from "next/image"
-import Progress1 from "@/public/img/progress-img-01.jpg"
-import Progress2 from "@/public/img/progress-img-02.jpg"
-import Progress3 from "@/public/img/progress-img-03.jpg"
-import Progress4 from "@/public/img/progress-img-04.jpg"
-import Progress5 from "@/public/img/progress-img-05.jpg"
-import Progress6 from "@/public/img/progress-img-06.jpg"
-import Progress7 from "@/public/img/progress-img-07.jpg"
-import Progress8 from "@/public/img/progress-img-08.jpg"
+import Progress1 from "@/public/img/progress-img-01.jpeg"
+import Progress2 from "@/public/img/progress-img-02.jpeg"
+import Progress3 from "@/public/img/progress-img-03.jpeg"
+import Progress4 from "@/public/img/progress-img-04.jpeg"
+// import Progress5 from "@/public/img/progress-img-05.jpg"
+// import Progress6 from "@/public/img/progress-img-06.jpg"
+// import Progress7 from "@/public/img/progress-img-07.jpg"
+// import Progress8 from "@/public/img/progress-img-08.jpg"
 import Progress9 from "@/public/img/progress-img-09.jpg"
 import Progress10 from "@/public/img/progress-img-10.jpg"
 import Progress11 from "@/public/img/progress-img-11.jpg"
@@ -254,7 +254,9 @@ export default function CustomizedDialogs() {
             </DialogContent>
           </BootstrapDialog>
         </SwiperSlide>
-        <SwiperSlide className="relative">
+
+
+        {/* <SwiperSlide className="relative">
           <Image
             onClick={ProgressE}
             className="slider-img  w-full "
@@ -277,29 +279,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
           </BootstrapDialog>
         </SwiperSlide>
-        <SwiperSlide className="relative">
-          <Image
-            onClick={ProgressF}
-            className="slider-img  w-full "
-            src={Progress6}
-          />
 
-          <BootstrapDialog
-            className="testimony-modal"
-            open={openF}
-            onClose={handleCloseF}
-            aria-labelledby="modal-modal-title"
-            aria-describedby="modal-modal-description"
-          >
-            <BootstrapDialogTitle
-              id="customized-dialog-title"
-              onClose={handleCloseF}
-            ></BootstrapDialogTitle>
-            <DialogContent dividers>
-              <Image className="slider-img" src={Progress6} />
-            </DialogContent>
-          </BootstrapDialog>
-        </SwiperSlide>
         <SwiperSlide className="relative">
           <Image
             onClick={ProgressG}
@@ -323,6 +303,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
           </BootstrapDialog>
         </SwiperSlide>
+
         <SwiperSlide className="relative">
           <Image
             onClick={ProgressH}
@@ -346,6 +327,7 @@ export default function CustomizedDialogs() {
             </DialogContent>
           </BootstrapDialog>
         </SwiperSlide>
+
         <SwiperSlide className="relative">
           <Image
             onClick={ProgressI}
@@ -368,7 +350,8 @@ export default function CustomizedDialogs() {
               <Image className="slider-img" src={Progress9} />
             </DialogContent>
           </BootstrapDialog>
-        </SwiperSlide>
+        </SwiperSlide> */}
+
         <SwiperSlide className="relative">
           <Image
             onClick={ProgressJ}
