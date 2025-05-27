@@ -342,10 +342,11 @@ window.location.href = '/thankyou'
 
             <button
             type="submit"
+            disabled={loading}
               class="submit-btn cursor-pointer bg-[#1CC273] text-[#fff] md:text-[18px] text-[15px] font-[700] md:p-3 p-2 w-full "
               fdprocessedid="8na1xd"
             >
-              Enquire Now
+         {loading ? "Loading..." : "Enquire Now"}
             </button>
           </div>
         </div>
