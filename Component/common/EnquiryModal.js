@@ -114,9 +114,7 @@ const {
                 : null
             } `
  
-          // window.location.replace(
-          //   "https://desaihomes.com/campaigns/flats-in-kottayam/thankyou.html"
-          // )
+window.location.href = '/thankyou'
         }
       } catch (error) {
         console.log(error.message)

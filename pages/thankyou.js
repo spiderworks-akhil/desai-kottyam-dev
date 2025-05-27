@@ -1,5 +1,6 @@
 import Image from "next/image"
 import ImageSlider1 from "@/public/img/ThankyouImage.jpg";
+import Link from "next/link";
 
 const index = () => {
   return (
@@ -21,12 +22,12 @@ const index = () => {
               Thank you for showing your interest.
             </h3>
 
-            <a
-              href="https://desaihomes.com/campaigns/flats-in-kottayam/"
+            <Link
+              href="/"
               class="submit-btn bg-[#1CC273] text-[#fff] text-[18px] font-[700] p-3 w-full "
             >
               Back To Home
-            </a>
+            </Link>
           </div>
           <div class="home-main-title-block-01 m-[0px_0px_0_0%] w-[48rem]">
             <Image
