@@ -206,12 +206,18 @@ const {
                 >
               {frm === "majestic_mount" && (
   <option selected>DD Majestic Mount (Starts from 59Lakh)</option>
+               <option>DD City Gate (Starts from 44Lakh)</option>
+<option>DD Legacy Heights (Starts from 49.5Lakh)</option>
 )}
 {frm === "city_gate" && (
   <option selected>DD City Gate (Starts from 44Lakh)</option>
+ <option>DD Majestic Mount (Starts from 59Lakh)</option>
+<option>DD Legacy Heights (Starts from 49.5Lakh)</option>
 )}
 {frm === "legacy_heights" && (
   <option selected>DD Legacy Heights (Starts from 49.5Lakh)</option>
+ <option>DD City Gate (Starts from 44Lakh)</option>
+<option>DD Legacy Heights (Starts from 49.5Lakh)</option>
 )}
 {!frm && (
   <>
