@@ -1,9 +1,135 @@
 // EnquiryModal.jsx
 import PopupImg from "@/public/img/popup.jpg";
 import Image from "next/image";
+import { useEffect, useState } from "react";
+import { useForm } from "react-hook-form";
+import axiosInstance from '../../axios/index'
+import axios from "axios";
+
+export default function EnquiryModal({ onClose,frm }) {
 
 
-export default function EnquiryModal({ onClose }) {
+    const [utmSource, setUtmSource] = useState("")
+    const [ipAddress, setIpAddress] = useState("")
+    const [loading, setLoading] = useState(false)
+    const [utmCamp, setutmCamp] = useState("")
+
+const {
+    handleSubmit,
+    register,
+    setValue,
+    formState: { errors },
+  } = useForm({
+    defaultValues: {
+      lead_types_id: "desaihomes_kottayam",
+      ip_address: "",
+      utm_source: "",
+      source_url: "",
+      requirement: "",
+      company_name: "desaihomes",
+      message: "",
+    },
+    mode: "all",
+  })
+  
+    // get utm_source
+  
+    useEffect(() => {
+      const searchParams = new URLSearchParams(window.location.search)
+      const source = searchParams.get("utm_source")
+      const utmCamp = searchParams.get("utm_campaign")
+      setutmCamp(utmCamp)
+      setUtmSource(source)
+    }, [])
+  
+    // ip address
+  
+    useEffect(() => {
+      axios
+        .get("https://api.ipify.org?format=json")
+        .then((response) => {
+          setIpAddress(response.data.ip)
+        })
+        .catch((err) => {
+          console.log(err)
+        })
+    }, [])
+  
+    const onSubmit = async (data) => {
+      setLoading(true)
+      try {
+        data.ip_address = ipAddress
+        data.utm_source = utmSource
+        data.utm_campaign = utmCamp
+        data.source_url = window.location.href
+        data.requirement = `project:${data.project}`
+        data.price_range = data.price_range,
+        data.location = data.location,
+          data.message = data.message
+        const postResponse = await axiosInstance.post("/store", data)
+        if (postResponse.data.status === "success") {
+          document.cookie = "formSubmitted=true; max-age=" + 365 * 24 * 60 * 60
+          const DataFields = `project_id:${data.project === "DD Majestic Mount (Starts from 59Lakh)"
+            ? 17
+            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+              ? 15
+              : data.project === ">DD City Gate (Starts from 44Lakh)"
+                ? 16
+                : null
+            }||crm_status:1||crm_lead_type_id:1||source_url:'https://desaihomes.com/campaigns/flats-in-kottayam||source:campaign||email:${data.email
+            }||name:${data.name}||city:city||campaign_name:${utmCamp || data.project
+            }||phone_number:${data.phone_number
+            }||message:message||ip_address:${ipAddress}||utm_source:${utmSource} ||price_range:${data.price_range
+            }||location:${data.location} ||price_range:${data.price_range}||message:${data.message} `
+  
+          let config = {
+            headers: {
+              "Access-Control-Allow-Origin": "*",
+              "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+              "Content-Type": "application/json",
+            },
+          }
+          const webhookRes = await axios.get(
+            "https://desaihomes.com/api/webhook",
+            {
+              params: {
+                DataFields: DataFields,
+                passcode: process.env.NEXT_PUBLIC_WEBHOOK_PASSCODE,
+              },
+            },
+            config
+          )
+          const DownlodBrochure = `${data.project === "DD Majestic Mount (Starts from 59Lakh)"
+            ? window.open(
+              "https://www.desaihomes.com/uploads/media/DD-Majestic_Mount_0063e0824698291.pdf"
+            )
+            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+              ? window.open(
+                "https://www.desaihomes.com/uploads/media/DD_Legacy_Heights63ddddab88571.pdf"
+              )
+              : data.project === "DD City Gate (Starts from 44Lakh)"
+                ? window.open(
+                  "https://www.desaihomes.com/uploads/media/DD-City_Gate_0063de1e6d25c35.pdf"
+                )
+                : null
+            } `
+ 
+          // window.location.replace(
+          //   "https://desaihomes.com/campaigns/flats-in-kottayam/thankyou.html"
+          // )
+        }
+      } catch (error) {
+        console.log(error.message)
+      }
+      setLoading(false)
+    }
+  
+      const handleSelectChange = (e) => {
+    setValue("project", e.target.value)
+  }
+  const handlePriceRangeChange = (e) => {
+    setValue("price_range", e.target.value)
+  }
   return (
     <div className="fixed inset-0 bg-[#000000bc] bg-opacity-70 flex justify-center items-center z-100 ">
       <div className="modal-container p-8 rounded relative w-[90%] max-w-[900px]">
@@ -16,6 +142,7 @@ export default function EnquiryModal({ onClose }) {
         {/* <h2 className="text-[28px] font-semibold mb-4">
           2BHK & 3BHK Flats in Kottayam for Sale
         </h2> */}
+<form     onSubmit={handleSubmit(onSubmit)}>
 
         <div className="enquiry-form-block grid md:grid-cols-2 grid-cols-1 ">
           <div className="enquiry-img md:pr-[25px]">
@@ -29,7 +156,15 @@ export default function EnquiryModal({ onClose }) {
                 name="name"
                 placeholder="Name"
                 fdprocessedid="4o7feh"
+                    {...register("name", {
+              required: "Name is requried",
+              pattern: {
+                value: /^[a-zA-Z\s.]*$/,
+                message: "Please enter a valid name",
+              },
+            })}
               />
+                <p className="text-red-500 mt-1 text-[12px]">{errors.name?.message}</p>
               <svg
                 width="13"
                 height="16"
@@ -64,15 +199,34 @@ export default function EnquiryModal({ onClose }) {
                   class="select-arrow w-full text-[#fff] p-2.5 outline-none appearance-none focus:border-indigo-600 "
                   name="project"
                   fdprocessedid="jjdkfm"
+                         {...register("project", {
+                required: "Flat is requried",
+              })}
+              onChange={handleSelectChange}
                 >
-                  <option value="" disabled="">
-                    Select Flat
-                  </option>
-                  <option>DD City Gate (Starts from 44Lakh)</option>
-                  <option>DD Legacy Heights (Starts from 49.5Lakh)</option>
-                  <option>DD Majestic Mount (Starts from 59Lakh)</option>
+              {frm === "majestic_mount" && (
+  <option selected>DD Majestic Mount (Starts from 59Lakh)</option>
+)}
+{frm === "city_gate" && (
+  <option selected>DD City Gate (Starts from 44Lakh)</option>
+)}
+{frm === "legacy_heights" && (
+  <option selected>DD Legacy Heights (Starts from 49.5Lakh)</option>
+)}
+{!frm && (
+  <>
+  
+  <option disabled value="" selected>
+  Select Flat
+</option>
+<option>DD City Gate (Starts from 44Lakh)</option>
+<option>DD Legacy Heights (Starts from 49.5Lakh)</option>
+<option>DD Majestic Mount (Starts from 59Lakh)</option>
+  </>
+)}
+
                 </select>
-              </div>
+              </div>   <p className="text-red-500 mt-1 text-[12px]">{errors.project?.message}</p>
             </div>
 
             <div class="form-input-block">
@@ -81,7 +235,14 @@ export default function EnquiryModal({ onClose }) {
                 name="phone_number"
                 placeholder="Phone Number"
                 fdprocessedid="xsduh"
-              />
+                   {...register("phone_number", {
+              required: "Phone Number is required",
+              pattern: {
+                value: /^[\d+\-]+$/,
+                message: "Please enter a valid phone number",
+              },
+            })}
+              />     <p className="text-red-500 mt-1 text-[12px]">{errors.phone_number?.message}</p>
               <svg
                 width="14"
                 height="15"
@@ -106,6 +267,7 @@ export default function EnquiryModal({ onClose }) {
                 name="location"
                 placeholder="Location"
                 fdprocessedid="tcovge"
+                            {...register("location")}
               />
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -129,10 +291,16 @@ export default function EnquiryModal({ onClose }) {
             <div class="form-input-block">
               <input
                 class="form-input"
-                name="email"
                 placeholder="Email"
                 fdprocessedid="02umfb"
-              />
+                     {...register("email", {
+              pattern: {
+                value: /^[^\s@]+@[^\s@]+\.[^\s@]+$/,
+                message: "Please enter a valid email address",
+              },
+            })}
+              /> 
+                <p className="text-red-500 mt-1 text-[12px]">{errors.email?.message}</p>
               <svg
                 width="14"
                 height="14"
@@ -163,6 +331,7 @@ export default function EnquiryModal({ onClose }) {
             </div>
 
             <button
+            type="submit"
               class="submit-btn cursor-pointer bg-[#1CC273] text-[#fff] md:text-[18px] text-[15px] font-[700] md:p-3 p-2 w-full "
               fdprocessedid="8na1xd"
             >
@@ -170,6 +339,8 @@ export default function EnquiryModal({ onClose }) {
             </button>
           </div>
         </div>
+
+</form>
       </div>
     </div>
   );

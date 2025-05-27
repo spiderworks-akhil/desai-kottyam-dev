@@ -1,0 +1,1 @@
+export const baseUrl = "https://dashboard.omnisellcrm.com/api/"

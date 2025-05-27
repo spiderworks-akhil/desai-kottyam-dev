@@ -107,10 +107,11 @@ const Form = () => {
   const handlePriceRangeChange = (e) => {
     setValue("price_range", e.target.value)
   }
+  
   return (
     <form
       className="banner-top-form bg-[#10375C] py-8 px-8 rounded-sm "
-      onSubmit={}
+      onSubmit={handlesubmit(onSubmit)}
     >
       <div className="">
         <div className="banner-top-form-title">
