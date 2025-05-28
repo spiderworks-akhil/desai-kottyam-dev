@@ -56,6 +56,8 @@ const {
     }, [])
   
     const onSubmit = async (data) => {
+      console.log("data",data);
+      
       setLoading(true)
       try {
         data.ip_address = ipAddress
@@ -73,7 +75,7 @@ const {
             ? 17
             : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
               ? 15
-              : data.project === ">DD City Gate (Starts from 44Lakh)"
+              : data.project === "DD City Gate (Starts from 44Lakh)"
                 ? 16
                 : null
             }||crm_status:1||crm_lead_type_id:1||source_url:'https://desaihomes.com/campaigns/flats-in-kottayam||source:campaign||email:${data.email
