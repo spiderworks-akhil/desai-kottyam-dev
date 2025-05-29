@@ -8,7 +8,7 @@ import axios from "axios";
 import { useRouter } from "next/router";
 export default function EnquiryModal({ onClose,frm }) {
 
-
+const router = useRouter()
     const [utmSource, setUtmSource] = useState("")
     const [ipAddress, setIpAddress] = useState("")
     const [loading, setLoading] = useState(false)
@@ -55,73 +55,89 @@ const {
         })
     }, [])
   
-    const onSubmit = async (data) => {
-      console.log("data",data);
-      
-      setLoading(true)
-      try {
-        data.ip_address = ipAddress
-        data.utm_source = utmSource
-        data.utm_campaign = utmCamp
-        data.source_url = window.location.href
-        data.requirement = `project:${data.project}`
-        data.price_range = data.price_range,
-        data.location = data.location,
-          data.message = data.message
-        const postResponse = await axiosInstance.post("/store", data)
-        if (postResponse.data.status === "success") {
-          document.cookie = "formSubmitted=true; max-age=" + 365 * 24 * 60 * 60
-          const DataFields = `project_id:${data.project === "DD Majestic Mount (Starts from 59Lakh)"
-            ? 17
-            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
-              ? 15
-              : data.project === "DD City Gate (Starts from 44Lakh)"
-                ? 16
-                : null
-            }||crm_status:1||crm_lead_type_id:1||source_url:'https://desaihomes.com/campaigns/flats-in-kottayam||source:campaign||email:${data.email
-            }||name:${data.name}||city:city||campaign_name:${utmCamp || data.project
-            }||phone_number:${data.phone_number
-            }||message:message||ip_address:${ipAddress}||utm_source:${utmSource} ||price_range:${data.price_range
-            }||location:${data.location} ||price_range:${data.price_range}||message:${data.message} `
-  
-          let config = {
-            headers: {
-              "Access-Control-Allow-Origin": "*",
-              "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
-              "Content-Type": "application/json",
-            },
-          }
-          const webhookRes = await axios.get(
-            "https://desaihomes.com/api/webhook",
-            {
-              params: {
-                DataFields: DataFields,
-                passcode: process.env.NEXT_PUBLIC_WEBHOOK_PASSCODE,
-              },
-            },
-            config
-          )
-          const DownlodBrochure = `${data.project === "DD Majestic Mount (Starts from 59Lakh)"
-            ? window.open(
-              "https://www.desaihomes.com/uploads/media/DD-Majestic_Mount_0063e0824698291.pdf"
-            )
-            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
-              ? window.open(
-                "https://www.desaihomes.com/uploads/media/DD_Legacy_Heights63ddddab88571.pdf"
-              )
-              : data.project === "DD City Gate (Starts from 44Lakh)"
-                ? window.open(
-                  "https://www.desaihomes.com/uploads/media/DD-City_Gate_0063de1e6d25c35.pdf"
-                )
-                : null
-            } `
- window.location.href = '/thankyou'  
+const onSubmit = async (data) => {
+  console.log("data", data);
+  setLoading(true);
+
+  try {
+    data.ip_address = ipAddress;
+    data.utm_source = utmSource;
+    data.utm_campaign = utmCamp;
+    data.source_url = window.location.href;
+    data.requirement = `project:${data.project}`;
+    data.price_range = data.price_range;
+    data.location = data.location;
+    data.message = data.message;
+
+    const postResponse = await axiosInstance.post("/store", data);
+
+    if (postResponse.data.status === "success") {
+      document.cookie = "formSubmitted=true; max-age=" + 365 * 24 * 60 * 60;
+
+      const DataFields = `project_id:${data.project === "DD Majestic Mount (Starts from 59Lakh)"
+        ? 17
+        : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+        ? 15
+        : data.project === "DD City Gate (Starts from 44Lakh)"
+        ? 16
+        : null
+      }||crm_status:1||crm_lead_type_id:1||source_url:'https://desaihomes.com/campaigns/flats-in-kottayam||source:campaign||email:${data.email
+      }||name:${data.name}||city:city||campaign_name:${utmCamp || data.project
+      }||phone_number:${data.phone_number
+      }||message:message||ip_address:${ipAddress}||utm_source:${utmSource}||price_range:${data.price_range
+      }||location:${data.location}||message:${data.message}`;
+
+      let config = {
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Methods": "DELETE, POST, GET, OPTIONS",
+          "Content-Type": "application/json",
+        },
+      };
+
+      await axios.get(
+        "https://desaihomes.com/api/webhook",
+        {
+          params: {
+            DataFields: DataFields,
+            passcode: process.env.NEXT_PUBLIC_WEBHOOK_PASSCODE,
+          },
+        },
+        config
+      );
+
+      // ✅ Trigger brochure download + redirect
+      const handleDownload = () => {
+        let brochureUrl = null;
+
+        if (data.project === "DD Majestic Mount (Starts from 59Lakh)") {
+          brochureUrl = "https://www.desaihomes.com/uploads/media/DD-Majestic_Mount_0063e0824698291.pdf";
+        } else if (data.project === "DD Legacy Heights (Starts from 49.5Lakh)") {
+          brochureUrl = "https://www.desaihomes.com/uploads/media/DD_Legacy_Heights63ddddab88571.pdf";
+        } else if (data.project === "DD City Gate (Starts from 44Lakh)") {
+          brochureUrl = "https://www.desaihomes.com/uploads/media/DD-City_Gate_0063de1e6d25c35.pdf";
         }
-      } catch (error) {
-        console.log(error.message)
-      }
-      setLoading(false)
+
+        if (brochureUrl) {
+          window.open(brochureUrl, "_blank");
+          setTimeout(() => {
+            router.push("/thankyou");
+          }, 1000);
+        } else {
+          alert("Brochure not available for this project.");
+        }
+      };
+
+      // 👉 Call the function here
+      handleDownload();
     }
+  } catch (error) {
+    console.log(error.message);
+  }
+
+  setLoading(false);
+};
+
   
       const handleSelectChange = (e) => {
     setValue("project", e.target.value)
