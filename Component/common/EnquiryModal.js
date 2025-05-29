@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
 import axiosInstance from '../../axios/index'
 import axios from "axios";
-
+import { useRouter } from "next/router";
 export default function EnquiryModal({ onClose,frm }) {
 
 
@@ -115,8 +115,7 @@ const {
                 )
                 : null
             } `
- 
-window.location.href = '/thankyou'
+ window.location.href = '/thankyou'  
         }
       } catch (error) {
         console.log(error.message)
