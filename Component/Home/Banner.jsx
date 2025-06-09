@@ -109,7 +109,7 @@ export default function Banner({ slider }) {
 
                   <div className="discont-block">
                     <h3>
-                      <span>1 Lakh* Discount</span>On Spot Booking
+                      <span>2 Lakh* Discount</span>On Spot Booking
                     </h3>
                   </div>
                 </div>

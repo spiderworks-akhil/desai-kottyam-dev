@@ -137,7 +137,7 @@ export default function EnquiryModal({ onClose, frm }) {
           }
         }, 1000);
 
-        let url = "/thankyou";
+        let url = "/campaigns/flats-in-kottayam/thankyou.html";
         if (params) url = url + params;
         window.location.href = url;
         // router.push("/thankyou");
