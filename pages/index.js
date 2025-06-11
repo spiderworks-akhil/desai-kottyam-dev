@@ -29,23 +29,26 @@ export default function Home() {
       <Banner />
       <TextWrapper />
       <ProjectList />
-      
 
       <section id="project-dt-section" className="mb-[80px]">
-
-      <div className="container">
-        <div className="flex items-center justify-center">
-          <div className="project-detail-section md:w-10/12 w-full">
-            <div className="project-detail-section w-full py-[60px] pb-[60px] ">
-              <div className="w-full">
-                <h2 className="md:text-[32px] text-[22px] text-[#1E1E1E] md:leading-[45px] leading-[34px] max-w-[850px] m-auto text-center">
-                 Find your peace in a home crafted with care. Our  <span className=" font-[600] text-[#4ee798]">Premium flats in Kottayam</span> offer elegant living at unmatched value with quality construction and architectural excellence.
-                </h2>
+        <div className="container">
+          <div className="flex items-center justify-center">
+            <div className="project-detail-section md:w-10/12 w-full">
+              <div className="project-detail-section w-full py-[60px] pb-[60px] ">
+                <div className="w-full">
+                  <h2 className="md:text-[32px] text-[22px] text-[#1E1E1E] md:leading-[45px] leading-[34px] max-w-[850px] m-auto text-center">
+                    Find your peace in a home crafted with care. Our{" "}
+                    <span className=" font-[600] text-[#4ee798]">
+                      Premium flats in Kottayam
+                    </span>{" "}
+                    offer elegant living at unmatched value with quality
+                    construction and architectural excellence.
+                  </h2>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
       </section>
 
       <div className="container">
@@ -72,7 +75,9 @@ export default function Home() {
         <div className="btn-flex flex items-center justify-center gap-[10px]">
           <a
             onClick={() => setIsEnquiryOpen(true)}
-            className="whatsapp-btn" target='_blank' href='https://api.whatsapp.com/send?phone=9847528000&text=Link%3A%0Ahttps%3A%2F%2Ffb.me%2FNBfDbROU%0A%0AI%20saw%20this%20on%20Facebook...&source_url=https%3A%2F%2Ffb.me%2FNBfDbROU&icebreaker=I%20saw%20this%20on%20Facebook...&app=facebook&entry_point=post_cta&jid=919946389796%40s.whatsapp.net&show_keyboard=1&show_ad_attribution=1&context=AWD5JmIm0kKqCNThfmjJ9xSOSUyKfhrSk6Jf0vo5v4XRCUp0vsSFecfelTuvRh4hgao9uqTKZO2rH_evK-dk8OYIq77tRcFpQKQ556MlpzWkmDcUcYuW01k636J4GyWm7Fy2DbJoTAe8XTZ9qU6IoerOmqdJL3z2SkIkthrwczU33aPibKv703FdWfYWy85tq1XdOelxz5EOUyRhXeuFZxCH6d-poimLKVKza_JECk2onS2ROvWwk89g4LVdX5tYYbuqZT32kndOQ7cYtEDismAG1kdBuz6y4aO1jjWliHZiXpSrxPluy5cQDLe8Nj6N-ozsapH4n4HvWz9XXirE6gV1-0jwqMBoJdD_G3nRTh7ngPS4F3M0boRDYjqssiyuehBlG0tAgSHiVvnh9Ws6ekf05gwe2NppITHQEvNy8tCoELm43w5iObAvzOIkIhy2P4kmfdrPww&fbclid=IwAR1d3YlfJ_tivXb_ZDkhD5aJeakQq3uih2oG6qJasko9jol02sun-q9HjyY'
+            className="whatsapp-btn"
+            target="_blank"
+            href="https://api.whatsapp.com/send?phone=9847528000&text=I would like to know more about Desai Homes Kottayam projects.&entry_point=post_cta&jid=919946389796%40s.whatsapp.net&show_keyboard=1&show_ad_attribution=1&context=AWD5JmIm0kKqCNThfmjJ9xSOSUyKfhrSk6Jf0vo5v4XRCUp0vsSFecfelTuvRh4hgao9uqTKZO2rH_evK-dk8OYIq77tRcFpQKQ556MlpzWkmDcUcYuW01k636J4GyWm7Fy2DbJoTAe8XTZ9qU6IoerOmqdJL3z2SkIkthrwczU33aPibKv703FdWfYWy85tq1XdOelxz5EOUyRhXeuFZxCH6d-poimLKVKza_JECk2onS2ROvWwk89g4LVdX5tYYbuqZT32kndOQ7cYtEDismAG1kdBuz6y4aO1jjWliHZiXpSrxPluy5cQDLe8Nj6N-ozsapH4n4HvWz9XXirE6gV1-0jwqMBoJdD_G3nRTh7ngPS4F3M0boRDYjqssiyuehBlG0tAgSHiVvnh9Ws6ekf05gwe2NppITHQEvNy8tCoELm43w5iObAvzOIkIhy2P4kmfdrPww&fbclid=IwAR1d3YlfJ_tivXb_ZDkhD5aJeakQq3uih2oG6qJasko9jol02sun-q9HjyY"
           >
             <svg
               width="18"
