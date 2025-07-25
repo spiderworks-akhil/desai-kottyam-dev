@@ -2746,12 +2746,15 @@ input.form-input, textarea.form-input, textarea.form-input {
         display: block;
     }
 
-.discont-block {
+  .discont-block {
         border: 1px solid #fff;
         border-radius: 13px;
         width: 95px;
         margin: 10px 0 10px auto;
         padding: 0 7px;
+        position: absolute;
+        right: 20px;
+        bottom: 160px;
     }
 .discont-block h3 {
         margin: 5px 0;
@@ -2759,6 +2762,7 @@ input.form-input, textarea.form-input, textarea.form-input {
         line-height: 16px;
         color: #6e4e1f;
     }
+    
   
   .banner-form-block.flex.justify-center.items-center {
     margin-top: 20px;

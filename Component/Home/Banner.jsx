@@ -7,12 +7,12 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
-import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic-Mount-Banner-02.jpg";
-import BannerImgMob01 from "@/public/img/maj-mob-banner.jpg";
-import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gate-Banner-02.jpg";
-import BannerImgMob02 from "@/public/img/city-gate-mob-banner.jpg";
-import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-Heights-Banner-02.jpg";
-import BannerImgMob03 from "@/public/img/legacy-mob-banner.jpg";
+import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic.jpg";
+import BannerImgMob01 from "@/public/img/maj-mob-banner-Mobile-New.jpg";
+import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gat.jpg";
+import BannerImgMob02 from "@/public/img/city-gate-mob-banner-New.jpg";
+import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-H.jpg";
+import BannerImgMob03 from "@/public/img/legacy-mob-banner-New.jpg";
 
 export default function Banner({ slider }) {
   const prevRef = useRef(null);
@@ -44,7 +44,7 @@ export default function Banner({ slider }) {
             effect={"fade"}
             fadeEffect={{ crossFade: true }}
             speed={1000}
-             loop={true}
+            loop={true}
             spaceBetween={20}
             slidesPerView={1}
             className="mySwiper"
@@ -109,7 +109,7 @@ export default function Banner({ slider }) {
 
                   <div className="discont-block">
                     <h3>
-                      <span>2 Lakh* Discount</span>On Spot Booking
+                      <span>1.5 Lakh* Discount</span>On Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -264,7 +264,9 @@ export default function Banner({ slider }) {
           <div className="slide-btm-text">
             <div className="grid sm:grid-cols-4 grid-cols-2 gap-[20px]">
               <div className="slide-btm-text-item">
-                <h2>6500<sup>+</sup></h2>
+                <h2>
+                  6500<sup>+</sup>
+                </h2>
                 <h5>Satisfied Customers</h5>
               </div>
 
@@ -281,7 +283,9 @@ export default function Banner({ slider }) {
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>8.5<sup>+</sup></h2>
+                <h2>
+                  8.5<sup>+</sup>
+                </h2>
                 <h5>Million Sq.ft.Construction</h5>
               </div>
             </div>
