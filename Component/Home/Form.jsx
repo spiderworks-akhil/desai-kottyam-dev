@@ -61,7 +61,7 @@ const Form = () => {
         const DataFields = `project_id:${
           data.project === "DD Majestic Mount (Starts from 59Lakh)"
             ? 17
-            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+            : data.project === "DD Legacy Heights (Starts from 52.5Lakh)"
             ? 15
             : data.project === "DD City Gate (Starts from 44Lakh)"
             ? 16
@@ -173,7 +173,7 @@ const Form = () => {
                 Select Flat
               </option>
               <option>DD Majestic Mount (Starts from 59Lakh)</option>
-              <option>DD Legacy Heights (Starts from 49.5Lakh)</option>
+              <option>DD Legacy Heights (Starts from 52.5Lakh)</option>
               <option>DD City Gate (Starts from 44Lakh)</option>
             </select>
             <p className="text-red-500 mt-1 text-[12px]">

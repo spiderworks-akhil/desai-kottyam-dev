@@ -80,7 +80,7 @@ export default function EnquiryModal({ onClose, frm }) {
         const DataFields = `project_id:${
           data.project === "DD Majestic Mount (Starts from 59Lakh)"
             ? 17
-            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+            : data.project === "DD Legacy Heights (Starts from 52.5Lakh)"
             ? 15
             : data.project === "DD City Gate (Starts from 44Lakh)"
             ? 16
@@ -120,7 +120,7 @@ export default function EnquiryModal({ onClose, frm }) {
           brochureUrl =
             "https://www.desaihomes.com/uploads/media/DD-Majestic_Mount_0063e0824698291.pdf";
         } else if (
-          data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+          data.project === "DD Legacy Heights (Starts from 52.5Lakh)"
         ) {
           brochureUrl =
             "https://www.desaihomes.com/uploads/media/DD_Legacy_Heights63ddddab88571.pdf";
@@ -244,7 +244,7 @@ export default function EnquiryModal({ onClose, frm }) {
                         </option>
                         <option>DD City Gate (Starts from 44Lakh)</option>
                         <option>
-                          DD Legacy Heights (Starts from 49.5Lakh)
+                          DD Legacy Heights (Starts from 52.5Lakh)
                         </option>
                       </>
                     )}
@@ -255,14 +255,14 @@ export default function EnquiryModal({ onClose, frm }) {
                         </option>
                         <option>DD Majestic Mount (Starts from 59Lakh)</option>
                         <option>
-                          DD Legacy Heights (Starts from 49.5Lakh)
+                          DD Legacy Heights (Starts from 52.5Lakh)
                         </option>
                       </>
                     )}
                     {frm === "legacy_heights" && (
                       <>
                         <option selected>
-                          DD Legacy Heights (Starts from 49.5Lakh)
+                          DD Legacy Heights (Starts from 52.5Lakh)
                         </option>
                         <option>DD City Gate (Starts from 44Lakh)</option>
                         <option>DD Majestic Mount (Starts from 59Lakh)</option>
@@ -275,7 +275,7 @@ export default function EnquiryModal({ onClose, frm }) {
                         </option>
                         <option>DD City Gate (Starts from 44Lakh)</option>
                         <option>
-                          DD Legacy Heights (Starts from 49.5Lakh)
+                          DD Legacy Heights (Starts from 52.5Lakh)
                         </option>
                         <option>DD Majestic Mount (Starts from 59Lakh)</option>
                       </>

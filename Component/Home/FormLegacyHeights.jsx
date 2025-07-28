@@ -100,7 +100,7 @@ const Form = () => {
             ? window.open(
                 "https://www.desaihomes.com/uploads/media/DD-Majestic_Mount_0063e0824698291.pdf"
               )
-            : data.project === "DD Legacy Heights (Starts from 49.5Lakh)"
+            : data.project === "DD Legacy Heights (Starts from 52.5Lakh)"
             ? window.open(
                 "https://www.desaihomes.com/uploads/media/DD_Legacy_Heights63ddddab88571.pdf"
               )
@@ -194,7 +194,7 @@ const Form = () => {
             >
               <option>DD City Gate (Starts from 44Lakh)</option>
               <option selected>
-                DD Legacy Heights (Starts from 49.5Lakh)
+                DD Legacy Heights (Starts from 52.5Lakh)
               </option>{" "}
               <option>DD Majestic Mount (Starts from 59Lakh)</option>
             </select>

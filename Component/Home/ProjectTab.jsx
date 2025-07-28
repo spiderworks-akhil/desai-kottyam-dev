@@ -23,7 +23,7 @@ export default () => (
 
         <div className=" ">
           <div className="pricing-block-price text-[18px] lg:text-[22px] rounded-[4px] font-[700] text-[#fff] p-[2px_15px]">
-            49.5* Lakhs
+            52.5* Lakhs
           </div>
         </div>
       </div>

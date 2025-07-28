@@ -109,7 +109,7 @@ export default function Banner({ slider }) {
 
                   <div className="discont-block">
                     <h3>
-                      Get 10 Gram <span>Gold Coin</span>
+                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ export default function Banner({ slider }) {
                   </div>
                   <div className="discont-block">
                     <h3>
-                      Get 10 Gram <span>Gold Coin</span>
+                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -214,7 +214,7 @@ export default function Banner({ slider }) {
                       <span class="badge3">
                         <h5>Offer Price</h5>
                         <h3>
-                          49.5 Lakhs <span>*</span>
+                          52.5 Lakhs <span>*</span>
                         </h3>
                       </span>
 
@@ -243,7 +243,7 @@ export default function Banner({ slider }) {
                   </div>
                   <div className="discont-block">
                     <h3>
-                      Get 10 Gram<span> Gold Coin</span>
+                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
                     </h3>
                   </div>
                 </div>
