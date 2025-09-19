@@ -8,11 +8,11 @@ import "swiper/css/effect-fade";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
 import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic.jpg";
-import BannerImgMob01 from "@/public/img/maj-mob-banner-Mobile-New.jpg";
+import BannerImgMob01 from "@/public/img/maj-mob-banner.jpg";
 import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gat.jpg";
-import BannerImgMob02 from "@/public/img/city-gate-mob-banner-New.jpg";
+import BannerImgMob02 from "@/public/img/city-gate-mob-banner.jpg";
 import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-H.jpg";
-import BannerImgMob03 from "@/public/img/legacy-mob-banner-New.jpg";
+import BannerImgMob03 from "@/public/img/legacy-mob-banner.jpg";
 
 export default function Banner({ slider }) {
   const prevRef = useRef(null);
@@ -109,7 +109,7 @@ export default function Banner({ slider }) {
 
                   <div className="discont-block">
                     <h3>
-                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
+                      <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -176,7 +176,7 @@ export default function Banner({ slider }) {
                   </div>
                   <div className="discont-block">
                     <h3>
-                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
+                      <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
                 </div>
@@ -243,7 +243,7 @@ export default function Banner({ slider }) {
                   </div>
                   <div className="discont-block">
                     <h3>
-                      <span>Get 10 Gram Gold Coin</span> on Spot Booking
+                      <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
                 </div>

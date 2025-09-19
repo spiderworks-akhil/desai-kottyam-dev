@@ -1,5 +1,5 @@
 // EnquiryModal.jsx
-import PopupImg from "@/public/img/popup.jpg";
+import PopupImg from "@/public/img/popup-new.jpeg";
 import Image from "next/image";
 import { useEffect, useState } from "react";
 import { useForm } from "react-hook-form";
@@ -61,9 +61,7 @@ export default function EnquiryModal({ onClose, frm }) {
     setParams(parsedUrl?.search);
   }, []);
 
-
   const onSubmit = async (data) => {
-
     setLoading(true);
     try {
       data.ip_address = ipAddress;
