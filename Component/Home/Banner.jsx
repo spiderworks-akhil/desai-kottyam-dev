@@ -214,7 +214,7 @@ export default function Banner({ slider }) {
                       <span class="badge3">
                         <h5>Offer Price</h5>
                         <h3>
-                          52.5 Lakhs <span>*</span>
+                          58 Lakhs <span>*</span>
                         </h3>
                       </span>
 

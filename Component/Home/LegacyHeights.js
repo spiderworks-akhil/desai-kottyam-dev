@@ -27,7 +27,7 @@ function LegacyHeights() {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[34px] font-[600] text-[#1E1E1E]">
-                      52.5* Lakhs
+                      58* Lakhs
                     </h4>
                   </div>
 
@@ -91,7 +91,7 @@ function LegacyHeights() {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[34px] font-[600] text-[#1E1E1E]">
-                      52.5* Lakhs
+                      58* Lakhs
                     </h4>
                   </div>
                   <Image
