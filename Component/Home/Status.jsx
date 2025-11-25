@@ -18,28 +18,28 @@ const Status = () => {
                     <div class="customers">
                         <div class="icon-number">
                             <Image src={ProfileIcon} alt='profile' width={50} height={50} />
-                            <h6 class="numbers">6500+</h6>
+                            <h6 class="numbers">7000+</h6>
                         </div>
                         <div class="numbers-description">Satisfied Customers</div>
                     </div>
                     <div class="customers">
                         <div class="icon-number">
                             <Image src={GraphIcon} alt='profile' width={50} height={50} />
-                            <h6 class="numbers">61+</h6>
+                            <h6 class="numbers">63+</h6>
                         </div>
                         <div class="numbers-description">Completed And Ongoing Projects</div>
                     </div>
                     <div class="customers">
                         <div class="icon-number">
                             <Image src={StarIcon} alt='profile' width={50} height={50} />
-                            <h6 class="numbers">32</h6>
+                            <h6 class="numbers">33+</h6>
                         </div>
                         <div class="numbers-description">Years Of Experience</div>
                     </div>
                     <div class="customers">
                         <div class="icon-number">
                             <Image src={BuildingsIcon} alt='profile' width={50} height={50} />
-                            <h6 class="numbers">8.5</h6>
+                            <h6 class="numbers">8.5+</h6>
                         </div>
                         <div class="numbers-description">Million Sq.ft.Construction</div>
                     </div>
