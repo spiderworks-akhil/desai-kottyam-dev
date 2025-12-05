@@ -28,7 +28,7 @@ function CityGate() {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] font-[600] leading-[34px] text-[#1E1E1E]">
-                      44* Lakhs
+                      47.5* Lakhs
                     </h4>
                   </div>
 
@@ -92,7 +92,7 @@ function CityGate() {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[34px] font-[600] text-[#1E1E1E]">
-                      44* Lakhs
+                      47.5* Lakhs
                     </h4>
                   </div>
                   <Image

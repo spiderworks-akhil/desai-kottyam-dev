@@ -35,7 +35,7 @@ export default function ProjectList({}) {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[30px] font-[600] text-[#1E1E1E]">
-                      59* Lakhs
+                      62.5* Lakhs
                     </h4>
                   </div>
 
@@ -102,7 +102,7 @@ export default function ProjectList({}) {
                     /> */}
 
                     <h4 className="sm:text-[26px] text-[20px] leading-[30px] font-[600] text-[#1E1E1E]">
-                      59* Lakhs
+                      62.5* Lakhs
                     </h4>
                   </div>
                   <Image

@@ -7,12 +7,12 @@ import "swiper/css/autoplay";
 import "swiper/css/effect-fade";
 import { Navigation, Autoplay, EffectFade } from "swiper/modules";
 import Image from "next/image";
-import BannerImg01 from "@/public/img/Desai-Homes-Kottayam-LP-Majestic.jpg";
-import BannerImgMob01 from "@/public/img/maj-mob-banner.jpg";
-import BannerImg02 from "@/public/img/Desai-Homes-Kottayam-LP-City-Gat.jpg";
-import BannerImgMob02 from "@/public/img/city-gate-mob-banner.jpg";
-import BannerImg03 from "@/public/img/Desai-Homes-Kottayam-LP-Legacy-H.jpg";
-import BannerImgMob03 from "@/public/img/legacy-mob-banner.jpg";
+import BannerImg01 from "@/public/img/DD-Majestic-Mount--min.png";
+import BannerImgMob01 from "@/public/img/Majestic-Mount-MS-min.jpg";
+import BannerImg02 from "@/public/img/DD-City-Gate-Banner--min.png";
+import BannerImgMob02 from "@/public/img/City-Gate-MS-min.jpg";
+import BannerImg03 from "@/public/img/DD-Legacy-Heights-Banner--min.png";
+import BannerImgMob03 from "@/public/img/Legacy-Heights-MS-min.jpg";
 
 export default function Banner({ slider }) {
   const prevRef = useRef(null);
@@ -69,7 +69,7 @@ export default function Banner({ slider }) {
                   />
                 </div>
 
-                <div class="banner-left-text">
+                {/* <div class="banner-left-text">
                   <h2 class="lg:text-[36px] font-[600] leading-[108.02%]">
                     Looking to settle down in your{" "}
                     <span> Forever Home in Kottayam</span>
@@ -112,7 +112,7 @@ export default function Banner({ slider }) {
                       <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
 
@@ -136,7 +136,7 @@ export default function Banner({ slider }) {
                   />
                 </div>
 
-                <div class="banner-left-text">
+                {/* <div class="banner-left-text">
                   <h2 class="lg:text-[36px] font-[600] leading-[108.02%]">
                     Looking to settle down in your{" "}
                     <span> Forever Home in Kottayam</span>
@@ -179,7 +179,7 @@ export default function Banner({ slider }) {
                       <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
 
@@ -203,7 +203,7 @@ export default function Banner({ slider }) {
                   />
                 </div>
 
-                <div class="banner-left-text">
+                {/* <div class="banner-left-text">
                   <h2 class="lg:text-[36px] font-[600] leading-[108.02%]">
                     Looking to settle down in your
                     <span> Forever Home in Kottayam</span>
@@ -246,7 +246,7 @@ export default function Banner({ slider }) {
                       <span>Get 1 Lakh* Discount</span> on Spot Booking
                     </h3>
                   </div>
-                </div>
+                </div> */}
               </div>
             </SwiperSlide>
           </Swiper>
@@ -261,7 +261,7 @@ export default function Banner({ slider }) {
             </button>
           </div> */}
 
-          <div className="slide-btm-text">
+          <div className="slide-btm-text hidden">
             <div className="grid sm:grid-cols-4 grid-cols-2 gap-[20px]">
               <div className="slide-btm-text-item">
                 <h2>
@@ -278,7 +278,9 @@ export default function Banner({ slider }) {
               </div>
 
               <div className="slide-btm-text-item">
-                <h2>33<sup>+</sup></h2>
+                <h2>
+                  33<sup>+</sup>
+                </h2>
                 <h5>Years Of Experience</h5>
               </div>
 

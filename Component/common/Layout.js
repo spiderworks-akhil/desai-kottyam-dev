@@ -14,13 +14,13 @@ const Layout = ({ children }) => {
       <header id="header" className="py-[25px] ">
         <div className="container">
           <div className="flex">
-            <div className="w-full">
+            <div className="w-full mt-[20px]">
               <div className="header-block flex items-center justify-between">
                 <div className="logo-block">
-                  <Image src={Logo} alt="logo" width={55} height={65} />
+                  {/* <Image src={Logo} alt="logo" width={55} height={65} /> */}
                 </div>
 
-                <div className="header-right-block flex items-center gap-[10px]">
+                <div className="header-right-block md:flex hidden items-center gap-[10px] mr-[150px]">
                   <div className="btn-flex flex items-center justify-center gap-[15px]">
                     <a href="tel:+919847528000">
                       <button
